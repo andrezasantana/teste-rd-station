@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RD Station</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght300@&display=swap');
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top header">
+        <a class="navbar-brand" href="https://www.rdstation.com/" target="_blank">
+            <img class="logo" src="assets/logo-rd-station-default.svg" alt="Logo RD Station">
+        </a>
+
+        <button class="navbar-toggler" type="submit" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon" id="active" onclick="changeIcon()"></span>
+        </button>
+
+        <div class="collapse navbar-collapse flex-direction-end menu" id="navbarSupportedContent">
+            <ul class="navbar-nav list">
+                <li class="nav-item item-list"><a class="nav-link link" href="#">Menu 1</a></li>
+                <li class="nav-item item-list dropdown" data-bs-display="static">
+                    <a class="nav-link dropdown-toggle link" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" href="#">Menu 2</a>
+                    <ul class="dropdown-menu dropdown-menu-2" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a class="dropdown-item title-dropdown-menu-2" href="#">Metodologia</a>
+                            <hr class="dropdown-divider">
+                            <a class="dropdown-item item-dropdown-menu-2" href="#">Tudo sobre Inbound Marketing</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item title-dropdown-menu-2" href="#">Cursos</a>
+                            <hr class="dropdown-divider">
+                            <a class="dropdown-item item-dropdown-menu-2" href="#">RD University</a>
+                            <a class="dropdown-item item-dropdown-menu-2" href="#">Introdução ao Inbound Marketing</a>
+                            <a class="dropdown-item item-dropdown-menu-2" href="#">RD Station Marketing Basic</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item title-dropdown-menu-2" href="#">Ferramentas</a>
+                            <hr class="dropdown-divider">
+                            <a class="dropdown-item item-dropdown-menu-2" href="#">Avalie seu funil de vendas</a>
+                            <a class="dropdown-item item-dropdown-menu-2" href="#">Compare suas métricas de Email
+                                Marketing</a>
+                            <a class="dropdown-item item-dropdown-menu-2" href="#">Calcule o ROI do RD Station
+                                Marketing</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item item-list"><a class="nav-link link" href="#">Menu 3</a></li>
+                <li class="nav-item item-list"><a class="nav-link link" href="#">Menu 4</a></li>
+                <li class="nav-item item-list item-list-menu-5"><a class="nav-link link" href="#">Menu 5</a></li>
+            </ul>
+
+            <div class="button">
+                <button class="button-1" type="submit">Button</button>
+                <button class="button-2" type="submit">Button
+                    <img src="assets/arrow.svg" alt="seta">
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

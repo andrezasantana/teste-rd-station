@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.header {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    justify-content: space-around;
+    border-bottom: 1px solid #CFD3D8;
+}
+.logo {
+    width: 10rem;
+    padding: 1% 0;
+}
+.icon {
+    background-image:url("/assets/toggler-icon.svg");
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.icon-change{
+    background-image:url("/assets/toggler-icon-x.svg");
+    background-repeat: no-repeat;
+    width: 0.7em;
+}
+.menu {
+    flex-grow: 0;
+}
+.link {
+    color: #212429;
+    font-weight: 700;
+}
+.link:focus, .link:hover {
+    color: #19C1CE;
+}
+.dropdown-menu-2.show {
+    display:flex;
+    flex-direction: row;
+    left: -300% !important;
+}
+.dropdown-menu-2.show li {
+    padding: 1rem;
+}
+.title-dropdown-menu-2 {
+    color: #19C1CE;
+    font-weight: 800;
+}
+.item-dropdown-menu-2 {
+    flex-direction: column;
+    color: #212429;
+}
+.button{
+    color: #212429;
+    text-align: center;
+    font-weight: 800;
+}
+.button-1 {
+    height: 39px;
+    width: 94px;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 2px;
+    border-bottom-width: 5px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.button-2 {
+    height: 40px;
+    width: 122px;
+    background-color: #19C1CE;
+    border-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.item-list {
+    padding-right: 2rem;
+}
+
+/* ---RESPONSIVE--- */
+@media (max-width:768px) {
+    .header {
+        border-bottom-style: none;
+    }
+    .list {
+        border-style: solid;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        border-color: #CFD3D8;
+        padding: 1.5rem 1rem;
+        margin-top: 0.5rem;
+    }
+    .item-list {
+        border-style: solid;
+        border-bottom-width: 1px;
+        border-color: #CFD3D8;
+        padding: 0;
+    }
+    .item-list-menu-5 {
+        border: none;
+    }
+    .dropdown-menu-2.show {
+        flex-direction: column;
+        font-size: 14px;
+        border-style: none;
+    }
+    .dropdown-menu-2.show li {
+        padding: 0;
+    }
+    .button {
+        background-color: #F1F3F5;
+        width: 100%;
+        padding: 2rem;
+    }
+}
