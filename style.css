@@ -21,6 +21,14 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/darkergrotesque/v2/U9MA6cuh-mLQlC4BKCtayOfARkSVoxbyMWgrTQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
     font-family: 'Nunito Sans';
     font-style: normal;
     font-weight: 400;
@@ -136,6 +144,9 @@
 .section-1 {
     background: linear-gradient(25deg, rgba(241,243,245,1) 70%, rgba(255,255,255,1) 70%);
     padding: 200px 732px 200px 108px;
+    position: absolute;
+    top: 50px;
+    height: 650px;
 }
 
 .section-1-title {
@@ -149,6 +160,78 @@
 .section-1-text {
     font-family: Nunito Sans;
     padding-top: 20px;
+}
+
+/* ---SECOND SECTION FORM--- */
+.section-2 {
+    position: relative;
+    width: 496px;
+    height: 1050px;
+    top: 120px;
+    left: 836px;
+    margin-right: 108px;
+    box-shadow: 0px 4px 12px rgba(33, 36, 41, 0.14);
+    border-radius: 2px;
+    background-color: #fff;
+}
+.title-box {
+    border-bottom: 1px solid #CFD3D8;
+}
+.title-section-2 {
+    font-family: Darker Grotesque;
+    font-weight: 800;
+    text-align: center;
+}
+.text-section-2 {
+    font-weight: 400;
+    text-align: center;
+    color: #7E8A98;
+}
+.form-box {
+    font-family: Nunito Sans;
+}
+.label {
+    font-weight: bold;
+}
+.field {
+    border: 2px solid #000000;
+    border-radius: 0;
+    box-shadow: inset 6px 6px 0px #EEFBFB;
+    background-color: white;
+}
+.password {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.eye {
+    position: absolute;
+    left: 93%;
+    top: 30%
+}
+.radio:checked {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='000000'/%3e%3c/svg%3e") !important;
+    background-color: #19C1CE;
+    border-color: #19C1CE;
+}
+.text-form {
+    font-size: 12px;
+    color: #7E8A98;
+    border: 1px solid #19C1CE;
+}
+.text-form a {
+    color: #19C1CE;
+}
+.create-account {
+    background-color: #F2BF4E;
+    text-transform: uppercase;
+    color: #212429;
+    font-family: Nunito Sans;
+    font-weight: 800;
+    border-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 /* ---RESPONSIVE--- */
@@ -191,10 +274,23 @@
 
     /* --FIRST SECTION-- */
     .section-1 {
-        background: linear-gradient(25deg, rgba(241,243,245,1) 80%, rgba(255,255,255,1) 80%);
+        background: linear-gradient(25deg, rgba(241,243,245,1) 95%, rgba(255,255,255,1) 95%);
         padding: 5rem 1rem;
+        height: 1487px;
     }
     .section-1-title {
         font-size: 40px;
+    }
+
+    /* --SECOND SECTION-- */
+    .section-2 {
+        top: 400px;
+        width: 90%;
+        Height: 1119px;
+        left: 0;
+        margin: 1rem;
+    }
+    .eye {
+        left: 90%;
     }
 }

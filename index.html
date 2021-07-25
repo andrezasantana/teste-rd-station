@@ -19,7 +19,7 @@
 
         <button class="navbar-toggler" type="submit" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="icon" id="active" onclick="changeIcon()"></span>
+            <span class="icon" id="active" onclick="changeIconMenu()"></span>
         </button>
 
         <div class="collapse navbar-collapse flex-direction-end menu" id="navbarSupportedContent">
@@ -60,7 +60,7 @@
             <div class="button">
                 <button class="button-1" type="submit">Button</button>
                 <button class="button-2" type="submit">Button
-                    <img src="assets/arrow.svg" alt="seta">
+                    <img src="assets/arrow.svg" alt="arrow">
                 </button>
             </div>
         </div>
@@ -68,8 +68,79 @@
     <main>
         <section class="col-sm-12 section-1">
             <h1 class="section-1-title">Gere mais<span> oportunidades </span>para seu negócio</h1>
-            <p class="section-1-text">O RD Station Marketing é um software para sua empresa fazer campanhas melhores, nutrir Leads, gerar
+            <p class="section-1-text">O RD Station Marketing é um software para sua empresa fazer campanhas melhores,
+                nutrir Leads, gerar
                 oportunidades comerciais qualificadas e alcançar mais resultados.</p>
+        </section>
+        <section class="p-4 section-2">
+            <div class="mt-4 title-box">
+                <h4 class="mt-4 mb-3 title-section-2">Comece seus 10 dias de teste grátis do RD Station Marketing!
+                </h4>
+                <p class="mb-4 text-section-2">Não precisa cadastrar cartão de crédito. 😉</p>
+            </div>
+            <form class=" mt-4 form-box" action="">
+                <label class="form-label w-100 mb-2 label" for="name">Diga, qual seu nome?</label>
+                <input class="form-control field" type="text" id="name" name="name" placeholder="Insira seu nome"
+                    required>
+                <label class="form-label w-100 mt-2 mb-2 label" for="email">Seu email de trabalho</label>
+                <input class="form-control field" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Insira seu e-mail" required>
+                <label class="form-label w-100 mt-2 mb-2 label" for="phone">Seu telefone</label>
+                <input class="form-control field" type="tel" id="phone" name="phone"
+                    placeholder="Insira seu número de telefone com DDD" required>
+                <label class="form-label w-100 mt-2 mb-2 label" for="job">Seu cargo de ocupação</label>
+                <select class="form-select field" id="job" name="job" required>
+                    <option class="" value="" selected disabled>Selecione seu cargo</option>
+                    <option value="1">Sócio(a) / CEO / Proprietário(a)</option>
+                    <option value="2">Diretor(a) de Vendas</option>
+                    <option value="3">Diretor(a) de Marketing</option>
+                    <option value="4">Diretor(a) Outras Áreas</option>
+                    <option value="5">Gerente de Marketing</option>
+                    <option value="6">Gerente de Vendas</option>
+                    <option value="7">Coordenador(a)/Supervisor(a) de Marketing</option>
+                    <option value="8">Coordenador(a)/Supervisor(a) de Vendas</option>
+                    <option value="9">Analista/Assistente de Marketing</option>
+                    <option value="10">Analista/Assistente de Vendas</option>
+                    <option value="11">Vendedor(a) / Executivo(a) de Contas</option>
+                    <option value="12">Estudante</option>
+                    <option value="13">Outros Cargos</option>
+                </select>
+                <label class="form-label w-100 mt-2 mb-2 label" for="password">Crie uma senha</label>
+                <div class="password">
+                    <input class="form-control field" type="password" id="password" name="password"
+                        placeholder="••••••••" required>
+                    <img class="eye" src="/assets/close-eye.svg" id="eye" alt="eye">
+                </div>
+                <label class="form-label w-100 mt-2 mb-2 label" for="password">Confirme sua senha</label>
+                <div class="password">
+                    <input class="form-control field" type="password" id="password" name="password"
+                        placeholder="••••••••" required>
+                    <img class="eye" src="/assets/close-eye.svg" id="eye" alt="eye">
+                </div>
+
+                <label class="form-label w-100 mt-2 mb-2 label" for="site">Qual o site da sua empresa?</label>
+                <input class="form-check-input radio" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">Meu site é</label>
+                <input class="form-control mt-3 mb-3 field" type="url" id="site" name="site"
+                    placeholder="Insira o endereço do seu site" required>
+                <input class="form-check-input radio" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                    checked>
+                <label class="form-check-label mb-4" for="flexRadioDefault2">Ainda não tenho site</label>
+                <div class="text-form">
+                    <ul class="m-0">
+                        <li>Ao criar minha conta estou de acordo com os <a
+                                href="https://legal.rdstation.com/pt-BR/rdstation-services-agreement/">termos de
+                                uso</a> do software e <a href="https://legal.rdstation.com/pt/privacy-policy/">política
+                                de privacidade</a>.
+                        </li>
+                        <li> Ao preencher o formulário, concordo em receber comunicações de acordo com meus
+                            interesses.</li>
+                        <li> *Você pode alterar suas permissões de comunicação a qualquer tempo.</li>
+                    </ul>
+                </div>
+                <input class="w-100 mt-4 p-2 create-account" type="submit" id="createAccount" value="criar minha conta"
+                    name="createAccount" required>
+            </form>
         </section>
     </main>
 
