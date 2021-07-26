@@ -258,7 +258,7 @@
     width: 600px;
 }
 
-/* FOURTH SECTION */
+/* ---FOURTH SECTION--- */
 .section-4 {
     background: linear-gradient(-140deg, rgba(241,243,245,1) 70%, rgba(255,255,255,1) 70%, rgba(255,255,255,1) 70%);
     height: 902px;
@@ -294,6 +294,54 @@
     font-size: 16px;
     padding-left: 8px;
     list-style-image: url("/assets/check-mark.svg");
+}
+
+/* ---FIFTH SECTION--- */
+.section-5 {
+    display: flex;
+    flex-direction: column;
+}
+.box-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 64px 0;
+}
+.section-5 h5 {
+    font-family: Darker Grotesque;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 100%;
+    width: 600px;
+    margin-left: 108px;
+    margin-top: 120px;
+}
+.card {
+    width: 392px;
+    box-shadow: 0px 4px 12px rgba(33, 36, 41, 0.14);
+    border-radius: 2px;
+}
+.box-img {
+    background-color: #F1F3F5;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+}
+.card-img {
+    width: 32px;
+}
+.card-title {
+    font-family: Darker Grotesque;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 110%;
+}
+.card-text {
+    font-family: Nunito Sans;
+    font-size: 16px;
+    line-height: 150%;
 }
 
 /* ---RESPONSIVE--- */
@@ -391,5 +439,15 @@
     }
     .box-section-4 p {
         font-size: 14px;
+    }
+
+    /* --FIFITH SECTION-- */
+    .section-5 h5 {
+        font-size: 30px;
+        width: 90%;
+        margin: 120px 0px 0px 16px;
+    }
+    .card {
+        width: 90%;
     }
 }
