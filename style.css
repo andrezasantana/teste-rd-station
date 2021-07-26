@@ -258,6 +258,44 @@
     width: 600px;
 }
 
+/* FOURTH SECTION */
+.section-4 {
+    background: linear-gradient(-140deg, rgba(241,243,245,1) 70%, rgba(255,255,255,1) 70%, rgba(255,255,255,1) 70%);
+    height: 902px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.section-4 img {
+    color: linear-gradient(45deg, rgba(241,243,245,0) 90%, rgba(255,255,255,1) 90%);
+    width: 600px;
+    margin-left: 108px;
+    margin-right: 108px;
+    margin-top: 222px;
+}
+.box-section-4 {
+    margin-top: 130px;
+    margin-right: 108px;
+    height: 528px;
+}
+.box-section-4 h5 {
+    font-family: Darker Grotesque;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 110%;
+}
+.box-section-4 p {
+    font-family: Nunito Sans;
+    font-size: 18px;
+    color: #212429;
+}
+.box-section-4 li {
+    font-family: Nunito Sans;
+    font-size: 16px;
+    padding-left: 8px;
+    list-style-image: url("/assets/check-mark.svg");
+}
+
 /* ---RESPONSIVE--- */
 @media (max-width:768px) {
 
@@ -330,5 +368,28 @@
     .box-section-3 p {
         width: 100%;
         padding: 0 16px;
+    }
+
+    /* --FOURTH SECTION-- */
+    .section-4 {
+        flex-direction: column-reverse;
+        width: 100%;
+        top: 2000px;
+    }
+    .box-section-4 {
+        width: 100%;
+        margin: 0;
+        padding: 100px 16px;
+    }
+    .section-4 img {
+        width: 90%;
+    }
+    .box-section-4 h5 {
+        font-size: 24px;
+        width: 100%;
+        margin: 0;
+    }
+    .box-section-4 p {
+        font-size: 14px;
     }
 }
