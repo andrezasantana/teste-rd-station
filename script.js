@@ -16,8 +16,3 @@ btn.addEventListener('click', function () {
         eyeIcon.src = "/assets/close-eye.svg";
     }
 });
-// // // The function stops video playback when the modal is closed
-// document.querySelector("#videoModal").addEventListener('hidden.bs.modal', function (e) {
-//     console.log('teste');
-//     // document.querySelector("#videoModal iframe").attr("src", document.querySelector("#videoModal iframe").attr("src"));
-// });
