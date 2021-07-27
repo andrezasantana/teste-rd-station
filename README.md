@@ -10,9 +10,10 @@ Teste para vaga pessoa engenheira de software - frontend | growth marketing.
 | Ferramenta | Descrição |
 | --- | --- |
 | `HTML5` | Linguagem de Marcação de Hipertexto |
-| `CSS5` | Cascading Style Sheets |
+| `CSS3` | Cascading Style Sheets |
 | `JavaScript` | Linguagem de programação|
 | `Live Service` | Servidor REST online falso para criações de API |
+| `Bootstrap` | Framework Front-End|
 
 <br>
 
